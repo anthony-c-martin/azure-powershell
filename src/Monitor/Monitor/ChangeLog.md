@@ -19,6 +19,8 @@
 -->
 
 ## Upcoming Release
+
+## Version 4.7.0
   * [Breaking Change] Data collection Rule upgraded API version to stable 2022-06-01
   * [Breaking Change] AMCS removed `Set-AzDataCollectionRule` cmdlet
   * Added cmdlets for data collection endpoint:

@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+
+## Version 5.11.0
 * Supported customer initiated migration
 * Supported creationTime filter in Blob Inventory
     - `New-AzStorageBlobInventoryPolicyRule`

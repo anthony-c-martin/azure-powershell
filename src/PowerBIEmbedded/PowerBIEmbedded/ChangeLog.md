@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+
+## Version 1.3.0
 * Removed deprecated workspace collection cmdlets
 
 ## Version 1.2.1
