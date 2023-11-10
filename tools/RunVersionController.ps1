@@ -339,9 +339,8 @@ function Update-AzPreview
 
 function Update-AzPreviewChangelog
 {
-    
+    $AzPrviewVersion = (Import-PowerShellDataFile "$PSScriptRoot\Az\Az.psd1").ModuleVersion
     $localAz = Import-PowerShellDataFile -Path "$PSScriptRoot\AzPreview\AzPreview.psd1"
-
     Write-Host "Getting gallery AzPreview information..." -ForegroundColor Yellow
     $galleryAz = Find-Module -Name AzPreview -Repository $GalleryName
     $updatedModules = @()
