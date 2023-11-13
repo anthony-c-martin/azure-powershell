@@ -115,7 +115,6 @@ jobs:
       arguments: -CalcBaseline
 
   - template: util/get-keyvault-secret-steps.yml
-    displayName: Get Kusto Service Principal Secret from Azure KeyVault
     parameters:
       subscriptionId: $(KustoSubscriptionId)
       keyVaultName: $(KustoServicePrincipalKeyVaultName)
@@ -131,7 +130,6 @@ jobs:
       arguments: CITest $(KustoTenantId) $(KustoServicePrincipalId) $(KVSecret) $(KustoClusterName) $(KustoClusterRegion)
 
   - template: util/get-github-pat-steps.yml
-    displayName: Get GitHub PAT
 
   - task: PowerShell@2
     displayName: Update Test Coverage Baseline
